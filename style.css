@@ -1,0 +1,35 @@
+/* #container div {
+  display: inline-block;
+  text-align: center;
+}
+#container img {
+  display: block;
+} */
+
+#container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#container div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: thin solid black;
+}
+#container div:nth-of-type(2n) {
+  background-color: lightgray;
+}
+#container div:hover {
+  background-color: rgb(222, 233, 245);
+}
+#container div:active {
+  background-color: rgb(177, 216, 177);
+}
+
+#container div span {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
